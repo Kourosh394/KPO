@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kourosh project opener</title>
+    <style>
+        @font-face {
+            font-family: B Homa;
+            src: url("B Homa.ttf");
+        }
+
+        body {
+            background-color: skyblue;
+            font-family: Arial, B Homa;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        button {
+            font-family: Arial, B Homa;
+            font-size: 25px;
+            background-color: green;
+            color: white;
+            border-radius: 20%;
+        }
+
+        input {
+            font-family: Arial;
+            font-size: 25px;
+            width: 99%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Kourosh project opener</h1>
+    <input type="text" id="projectName" placeholder="Type project name">
+    <br><br>
+    <button onclick="window.location.href = `https://kourosh394.github.io/Persian-projects/${document.getElementById('projectName').value}/main.html`">open</button>
+</body>
+
+</html>
