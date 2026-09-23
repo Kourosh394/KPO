@@ -31,6 +31,22 @@
             text-align: center;
             width: 99%;
         }
+
+        @media (hover: none) and (pointer: coarse) {
+            body {
+                font-size: 50px;
+                touch-action: manipulation;
+            }
+
+            button {
+                font-size: 70px;
+                height: 150px;
+            }
+
+            input {
+                font-size: 50px;
+            }
+        }
     </style>
 </head>
 
@@ -38,7 +54,8 @@
     <h1>Kourosh project opener</h1>
     <input type="text" id="projectName" placeholder="Type project name" lang="auto" dir="auto">
     <br><br>
-    <button onclick="window.location.href = `https://kourosh394.github.io/Persian-projects/${document.getElementById('projectName').value}/main.html`">open</button>
+    <button
+        onclick="window.location.href = `https://kourosh394.github.io/Persian-projects/${document.getElementById('projectName').value}/main.html`">open</button>
 </body>
 
 </html>
